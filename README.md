@@ -47,7 +47,7 @@ What makes the algorithm work?
 See above.
 
 ```
-Did Vincent Van Gogh you have both ears?
+Did Vincent Van Gogh have both ears?
 ```
 See above.
 
