@@ -1,0 +1,15 @@
+[package]
+name = "VanGoghDec"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+png = "0.17.7"
+
+[[bin]]
+name = "vince"
+path = "src/bin/vince.rs"
+
+[[bin]]
+name = "de-vince"
+path = "src/bin/de-vince.rs"
