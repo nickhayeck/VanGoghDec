@@ -33,7 +33,7 @@ to decode back to a lame and boring format so you can admire the results on a st
 Feel free to take the codec for a test drive on the images I've left in the `img` directory.
 
 ## The Algorithm
-After choosing a limited palette (I just selected a hundred or so pretty evenly distributed throughout color space), the image is broken down into 2x2 pixel blocks. The average of this block is taken, and  
+After choosing a limited palette (I just selected a hundred or so pretty evenly distributed throughout color space), the image is broken down into 2x2 pixel blocks. The average of this block is taken and serves as a "target" for the algorithm. It sets the upper left pixel to the closest color in its palette and then iterates through the other pixels in the block choosing the color in the palette that brings the block-average closest to the target average. The compression lies in the choice of palette: we only use 127 colors, so we can compress each pixel into 7 bits. This brings the image's encoded length to `255*8 + 64 + width*height*7` bits. Using a standard compression algorithm could bring this file size down to 20% of this size since it is ultra-strcutured.
 
 ## FAQ
 ```
@@ -52,6 +52,4 @@ Did Vincent Van Gogh have both ears?
 See above.
 
 ## Wrapping Up
-I like building the future. Let me know if you want to do it together.
-
--- [Nick](nickhayeck.com)
+Check out [my website](nickhayeck.com).
